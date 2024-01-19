@@ -1,0 +1,9 @@
+/* styles.css */
+.root {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+#borderPane {
+    -fx-background-color: linear-gradient(to bottom, #3b82f6, #9333ea);
+}

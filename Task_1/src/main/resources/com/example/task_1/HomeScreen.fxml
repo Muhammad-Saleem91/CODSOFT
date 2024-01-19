@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task_1.HomeScreenController"
+            stylesheets="@styles.css">
+  <center>
+    <StackPane fx:id="stackPane">
+      <VBox alignment="CENTER" spacing="20.0">
+        <children>
+          <Button onAction="#handlePlayButton" prefHeight="26.0" prefWidth="70.0" text="PLAY" />
+        </children>
+      </VBox>
+    </StackPane>
+  </center>
+</BorderPane>

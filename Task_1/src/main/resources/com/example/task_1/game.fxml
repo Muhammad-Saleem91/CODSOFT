@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task_1.GameController"
+            stylesheets="@styles.css">
+    <top>
+        <VBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="welcomeLabel" text="" />
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" spacing="10.0">
+            <children>
+                <Label text="Your Guess:" />
+                <TextField fx:id="guessTextField" promptText="Enter your guess" onAction="#handleEnterKey" maxWidth="150" />
+                <Button fx:id="guessButton" onAction="#handleGuessButton" text="Guess" />
+                <Label fx:id="feedbackLabel" text="" />
+            </children>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button onAction="#handleNewGameButton" text="New Game" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+            </padding>
+        </HBox>
+    </bottom>
+</BorderPane>
